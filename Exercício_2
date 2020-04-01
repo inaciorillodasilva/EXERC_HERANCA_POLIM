@@ -1,0 +1,48 @@
+<?php
+class Animal{
+  public $nome;
+  public $idade;
+  public $som;
+}
+
+class Cachorro extends Animal{
+  public $habilidade;
+  
+  public function Cachorro ($nome_, $idade_, $som_, $habilidade_){
+    $this-> nome = $nome_;
+    $this-> Idade = $idade_;
+    $this-> Som = $som_;
+    $this-> Habilidade = $habilidade_;
+  }
+}
+
+class Cavalo extends Animal{
+  public $habilidade;
+  
+  public function Cavalo ($nome_, $idade_, $som_, $habilidade_){
+  $this-> nome = $nome_;
+  $this-> Idade = $idade_;
+  $this-> Som = $som_;
+  $this-> Habilidade = $habilidade_;  
+  }
+}
+
+class Preguica extends Animal{
+  public $habilidade;
+  
+  public function Preguica ($nome_, $idade_, $som_, $habilidade_){
+  $this-> nome = $nome_;
+  $this-> Idade = $idade_;
+  $this-> Som = $som_;
+  $this-> Habilidade = $habilidade_;  
+  }
+}
+
+$cachorro = new Cachorro("Dog", 10, "Emite som", "correr");
+print_r ($cachorro);
+
+$cavalo = new Cavalo("Horse", 9, "Emite som", "correr");
+print_r ($cavalo);
+
+$preguica = new Preguica("Sloth", 8, "Emite som", "subir em árvores");
+print_r ($preguica);
