@@ -45,4 +45,4 @@ $cavalo-> setSom();
 
 $preguica = new Preguica("Sloth", 8, "Guinchado");
 $preguica-> setSom();
-?
+?>
