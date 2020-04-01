@@ -1,0 +1,48 @@
+<?php ccccccc
+class Veiculo{
+  public $modelo;
+  public $velocidade;
+  public $passageiros;
+  public $combustivel;
+}
+
+class Carro extends Veiculo{
+  public $portas;
+  public $ano;
+
+  public function Carro($modelo_, $velocidade_, $passageiros_, $combustivel_, $portas_, $ano_){
+    $this-> Modelo = $modelo_;
+    $this-> Velocidade = $velocidade_;
+    $this-> Passageiros = $passageiros_;
+    $this-> Combustivel = $combustivel_;
+    $this-> Portas = $portas_;
+    $this-> Ano = $ano_;
+  }
+}
+
+class Aviao extends Veiculo{
+  public $uso;
+  public $tipo;
+
+  public function aviao($modelo_, $velocidade_, $passageiros_, $combustivel_, $uso_, $tipo_){
+    $this-> Modelo = $modelo_;
+    $this-> Velocidade = $velocidade_;
+    $this-> Passageiros = $passageiros_;
+    $this-> Combustivel = $combustivel_;
+    $this-> Uso = $uso_;
+    $this-> Tipo = $tipo_;
+  }
+}
+
+$carro01 = new Carro("Ferrari F40", "324 KM/h", 2, "120 litros", 2, 1987);
+print_r ($carro01);
+
+$carro02 = new Carro("Lamborghini Aventador", "370 KM/h", 2, "85 litros", 2, 2011);
+print_r ($carro02);
+
+$aviao01 = new Aviao("Airbus A380","970 KM/h", 853, "320.000 litros", "Transporte de cargas e passageiros", "Aeronave comercial");
+print_r ($aviao01);
+
+$aviao02 = new Aviao("Ipanema 203", "185 KM/h", 232, "262 litros", "Pulverização de produtos", "Aeronave agrícola");
+print_r ($aviao02);
+?>
