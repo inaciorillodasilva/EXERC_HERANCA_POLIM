@@ -6,44 +6,38 @@ class Animal{
 }
 
 class Cachorro extends Animal{
-  public $habilidade;
-  
-  public function Cachorro ($nome_, $idade_, $som_, $habilidade_){
-    $this-> nome = $nome_;
+  public function Cachorro ($nome_, $idade_, $som_){
+    $this-> Nome = $nome_;
     $this-> Idade = $idade_;
     $this-> Som = $som_;
-    $this-> Habilidade = $habilidade_;
+    $this-> Habilidade = "Correr";
   }
 }
 
 class Cavalo extends Animal{
-  public $habilidade;
-  
-  public function Cavalo ($nome_, $idade_, $som_, $habilidade_){
-  $this-> nome = $nome_;
-  $this-> Idade = $idade_;
-  $this-> Som = $som_;
-  $this-> Habilidade = $habilidade_;  
+  public function Cavalo ($nome_, $idade_, $som_){
+    $this-> Nome = $nome_;
+    $this-> Idade = $idade_;
+    $this-> Som = $som_;
+    $this-> Habilidade = "Correr";  
   }
 }
 
 class Preguica extends Animal{
-  public $habilidade;
-  
-  public function Preguica ($nome_, $idade_, $som_, $habilidade_){
-  $this-> nome = $nome_;
-  $this-> Idade = $idade_;
-  $this-> Som = $som_;
-  $this-> Habilidade = $habilidade_;  
+  public function Preguica ($nome_, $idade_, $som_){
+    $this-> Nome = $nome_;
+    $this-> Idade = $idade_;
+    $this-> Som = $som_;
+    $this-> Habilidade = "Subir em árvores";  
   }
 }
 
-$cachorro = new Cachorro("Dog", 10, "Emite som", "correr");
+$cachorro = new Cachorro("Dog", 10, "Latido");
 print_r ($cachorro);
 
-$cavalo = new Cavalo("Horse", 9, "Emite som", "correr");
+$cavalo = new Cavalo("Horse", 9, "Relinchado");
 print_r ($cavalo);
 
-$preguica = new Preguica("Sloth", 8, "Emite som", "subir em árvores");
+$preguica = new Preguica("Sloth", 8, "Guinchado");
 print_r ($preguica);
 ?>
