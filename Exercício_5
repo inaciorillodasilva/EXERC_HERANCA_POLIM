@@ -61,3 +61,4 @@ $imovel2->setDesconto();
 echo "O preço deste imóvel com o desconto incluso é de R$ {$imovel2-> Preço}";
 echo "<br></br>";
 echo "<br></br>";
+?>
