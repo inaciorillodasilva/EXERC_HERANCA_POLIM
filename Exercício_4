@@ -66,3 +66,4 @@ $exame-> Examinar($animal3-> Nome);
 if ($exame-> ver == true){
   $animal3-> setSom();
 }
+?>
