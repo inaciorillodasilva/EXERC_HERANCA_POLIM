@@ -46,3 +46,4 @@ print_r ($cavalo);
 
 $preguica = new Preguica("Sloth", 8, "Emite som", "subir em árvores");
 print_r ($preguica);
+?>
