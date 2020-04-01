@@ -1,0 +1,68 @@
+<?php
+class Veterinario{
+  public $ver;
+  
+  public function Examinar($exame){
+    echo "Examinando $exame...		";
+    $this-> ver = true;
+   
+  }
+}
+
+class Animal{
+  public $nome;
+  public $idade;
+  public $som;
+
+  public function setSom(){
+    echo "{$this-> Som}";
+      echo "<br> </br>";  
+  }
+}
+
+class Cachorro extends Animal{
+  public function Cachorro ($nome_, $idade_, $som_){
+    $this-> Nome = $nome_;
+    $this-> Idade = $idade_;
+    $this-> Som = $som_;
+    $this-> Habilidade = "Correr";
+  }
+}
+
+class Cavalo extends Animal{
+  public function Cavalo ($nome_, $idade_, $som_){
+    $this-> Nome = $nome_;
+    $this-> Idade = $idade_;
+    $this-> Som = $som_;
+    $this-> Habilidade = "Correr";  
+  }
+}
+
+class Preguica extends Animal{
+  public function Preguica ($nome_, $idade_, $som_){
+    $this-> Nome = $nome_;
+    $this-> Idade = $idade_;
+    $this-> Som = $som_;
+    $this-> Habilidade = "Subir em árvores";  
+  }
+}
+
+$exame = new Veterinario;
+
+$animal1 = new Cachorro("Dog", 10, "Latido");
+$exame-> Examinar($animal1-> Nome);
+if ($exame-> ver == true){
+  $animal1-> setSom();
+}
+ 
+$animal2 = new Cavalo("Horse", 9, "Relinchado");
+$exame-> Examinar($animal2-> Nome);
+if ($exame-> ver == true){
+  $animal2-> setSom();
+}
+
+$animal3 = new Preguica("Sloth", 8, "Guinchado");
+$exame-> Examinar($animal3-> Nome);
+if ($exame-> ver == true){
+  $animal3-> setSom();
+}
