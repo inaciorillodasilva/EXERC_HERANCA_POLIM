@@ -1,4 +1,4 @@
-<?php ccccccc
+<?php
 class Veiculo{
   public $modelo;
   public $velocidade;
